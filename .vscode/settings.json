@@ -1,0 +1,38 @@
+{
+    "workbench.colorTheme": "One Dark Pro Flat",
+    "files.autoSave": "afterDelay",
+    "editor.formatOnPaste": false,
+    "editor.formatOnSave": false,
+    "editor.formatOnType": false,
+    "liveServer.settings.donotShowInfoMsg": true,
+    "[jsonc]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[html]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "liveServer.settings.donotVerifyTags": true,
+    "workbench.editor.untitled.hint": "hidden",
+    "editor.wordWrap": "on"
+  
+    [
+          
+  
+      
+    ],
+    "liveSassCompile.settings.formats":[
+        // This is Default.
+        {
+            "format": "expanded",
+            "extensionName": ".css",
+            "savePath": null
+        },
+        // You can add more
+        {
+            "format": "compressed",
+            "extensionName": ".min.css",
+            "savePath": "~/../css/"
+        },  
+    ]
+  }
+  

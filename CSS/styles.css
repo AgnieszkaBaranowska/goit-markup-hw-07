@@ -20,7 +20,7 @@ header{
     background-color: #FFFFFF;
     border-bottom: 1px solid #ECECEC;
 }
-.page-header{    
+.header{    
     height: 80px;
     display: flex;
     justify-content:space-between;
@@ -30,10 +30,8 @@ header{
 
 /* logo */
 
-.first-letters {
-    color: #2196F3;
-}
-.logo-header {
+
+.header__logo {
     text-decoration: none;
     color:#212121;
     width: 145px;
@@ -45,16 +43,23 @@ header{
     line-height: 31px;
     letter-spacing: 0.03em;
 }
+.first-letters {
+    color: #2196F3;
+}
 /* nawigacja w nagłówku */
 
-.list-menu{
+.nav{
     list-style: none;
     display: flex;
     padding: 0px;
     margin: 0px;
     }
 
-.header-menu {
+.nav__item{
+    margin-right: 46px;
+        
+ }
+.nav__item--link {
     text-decoration: none;
     color: #212121;
     width: 53px;
@@ -64,13 +69,9 @@ header{
     line-height: 16px;
     letter-spacing: 0.02em;
 }
-.nav-menu{
-    margin-right: 46px;
-    
-}
 
-.header-menu:hover,
-.header-menu:focus {
+.nav__item--link:hover,
+.nav__item--link:focus {
     color:#2196F3;
     text-decoration: none;
     transition-duration: 250ms;
