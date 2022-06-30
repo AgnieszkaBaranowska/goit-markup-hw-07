@@ -322,7 +322,7 @@ body{
      padding: 0px;   
  }
 /*lorem list nasze atuty*/
-.assets-icons-list{
+.assets__list{
     list-style: none;
     display: flex;
     justify-content: space-between;
@@ -333,7 +333,7 @@ body{
 }  
 
 
-.assets-icons{
+.assets__image{
     width: 270px;
     height: 120px;
     justify-content: center;
@@ -343,26 +343,27 @@ body{
     border-radius: 4px;
 }
 
-.icons:hover{
+.assets__icon:hover{
     fill:#2196F3;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.icons{
+.assets__icon{
     width: 70px;
     height: 70px;
 }
 
-.lorem-list{
+.our-strengths{
     list-style-type: none;
     display: flex;
     gap: 30px;
     padding: 0px;
     margin: 0px;
+    
 }
 
-.title{
+.our-strengths__title{
     width: 270px;
     height: 16px;
     font-weight: 700;
@@ -371,7 +372,7 @@ body{
     letter-spacing: 0.03em;
     text-transform: uppercase;
 }
-.text{    
+.our-strengths__text{    
     height: 75px;
     font-size: 14px;
     line-height: 24px;
@@ -380,7 +381,7 @@ body{
 }
 
 /* sekcja: "Czym się zajmujemy" */
-.profession-title{
+.profession__title{
     font-weight: 700;
     font-size: 36px;
     line-height: 42px;
@@ -390,7 +391,7 @@ body{
     margin-bottom: 50px;
 }
 
-.photo-profession{
+.profession__list{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -398,16 +399,12 @@ body{
     margin: 0px;
     list-style-type: none;      
 }
-.profession{
+.profession__image{
     position: relative; 
     display: flex;
     justify-content: space-between;
 }
-    
-    
-
-
-.profession-text{
+ .profession__description{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -423,7 +420,7 @@ body{
     color: #FFFFFF;
 }
 
-.profession > .profession-text{
+.profession__image > .profession__description{
     position: absolute;
     background-color: rgba(47, 48, 58, 0.8);
     bottom: 0px;
@@ -432,11 +429,11 @@ body{
 }
 /* sekcja "Nasz zespół" */
 
-.team-section{
+.team{
     background: #F5F4FA;
     
 }
-.our-team{
+.team__title{
     font-weight: 700;
     font-size: 36px;
     line-height: 42px;
@@ -445,7 +442,7 @@ body{
     margin: 0px;
     margin-bottom: 50px;
 }
-.team{
+.team__list{
     list-style: none;
     display: flex;
     justify-content: space-between;
@@ -453,19 +450,19 @@ body{
     margin: 0px;
 }
 
-.person{
+.team_photo{
     height: 428px;
     background: #FFFFFF;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
     margin: 0px;
 }
-.name-and-position {
+.team__text{
     display: flex;
     flex-direction: column;
     text-align: center;
 }
-.name{
+.team__person-name{
     font-weight: 500;
     font-size: 16px;
     line-height: 19px;
@@ -474,14 +471,14 @@ body{
     padding-bottom: 10px;
     padding-top: 30px;    
 }
-.position{
+.team__person-position{
     font-size: 16px;
     line-height: 19px;
     letter-spacing: 0.03em;
     color: #757575;
     margin: 0px;
 }
-.social-list{
+.social-link__list{
     list-style: none;
     display: flex;
     justify-content: space-between; 
@@ -491,15 +488,7 @@ body{
     margin-right: 32px;
     margin-left: 32px;
 }
-
-.social-icons{
-    width: 20px;
-    height: 20px;
-    align-items: center; 
-    fill: #AFB1B8;    
-}
-
-.social-links-item{
+.social-link__item{
     justify-content: center;
     align-items: center;
     display: flex;
@@ -509,20 +498,29 @@ body{
     cursor: pointer;
 }
 
-.social-links-item:hover{
+.social-link__item:hover{
     background-color: #2196F3;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);     
 }
-.social-links-item:hover svg{
+.social-link__item:hover svg{
     fill: #FFFFFF;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
+.social-link__icons{
+    width: 20px;
+    height: 20px;
+    align-items: center; 
+    fill: #AFB1B8;    
+}
+
+
+
 /* sekcja nasi klienci */
-.our-customer{
+.customer{
     font-weight: 700;
     font-size: 36px;
     line-height: 42px;
@@ -532,14 +530,14 @@ body{
     margin-bottom: 50px;
 }
 
-.customer-list{
+.customer__list{
     list-style: none;
     display: flex;
     justify-content: space-between; 
     align-items: center;      
     padding: 0px;     
 }
-.customer{
+.customer__item{
     justify-content: center;
     align-items: center;
     display: flex;
@@ -549,20 +547,21 @@ body{
     border: 1px solid #AFB1B8;
     border-radius: 4px;   
 }
-.customer-icons{
-    width: 106px;
-    height: 60.04px;
-    fill:#AFB1B8;
-}
-.customer:hover{
+.customer__item:hover{
     border: 1px solid #2196F3;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.customer:hover svg{
+.customer__item:hover svg{
     fill:#2196F3;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.customer__icons{
+    width: 106px;
+    height: 60.04px;
+    fill:#AFB1B8;
 }
 
 
