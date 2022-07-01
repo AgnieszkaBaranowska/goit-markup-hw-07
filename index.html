@@ -444,41 +444,42 @@
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="close-btn" data-modal-close>
-          <svg class="close-icon">
+          <svg class="close__icon">
             <use href="./images/icons.svg#icon-close-icon"></use>
           </svg>
         </button>
         <form class="form">
-          <p class="modal-title">Zostaw swoje dane w formularzu poniżej</p>
-          <div class="modal-box">
-          <label class="label">
+          <p class="form__title">Zostaw swoje dane w formularzu poniżej</p>
+          <div class="form__content">
+          <label class="form__label">
             Imie
-            <input type="text" name="username" class="input" required/>
-          <svg class="modal-icon">
+            <input type="text" name="username" class="form__input" required/>
+          <svg class="form__icon">
             <use href="./images/icons.svg#icon-person-black"></use>
           </svg>
           </label>
-          <label class="label">
+          <label class="form__label">
             Telefon
-            <input type="tel" name="phone_number" class="input" required />
-            <svg class="modal-icon">
+            <input type="tel" name="phone_number" class="form__input" required />
+            <svg class="form__icon">
               <use href="./images/icons.svg#icon-phone-black"></use>
             </svg>
           </label>
-          <label class="label">
+          <label class="form__label">
             Email
-            <input type="email" name="email" class="input" required />
-            <svg class="modal-icon">
+            <input type="email" name="email" class="form__input" required />
+            <svg class="form__icon">
               <use href="./images/icons.svg#icon-email-black"></use>
             </svg>
           </label>        
-          <label class="label">
+          <label class="form__label">
             Komentarz
-            <textarea name="feedback" rows="5" placeholder="Wprowadź tekst" class="textarea"></textarea>
+            <textarea name="feedback" rows="5" placeholder="Wprowadź tekst" class="form__textarea"></textarea>
           </label>
           <label class="user-policy">
-            <input type="checkbox" name="aaccept-policy" class="modal-form-poicy visually-hidden"/>
-           <p class="modal-form-poicy-text"> Oświadczam iż akceptuję <a href="" class="link"><span class="color">Regulamin</span></a> i <a href="" class="link"><span class="color">Politykę Prywatności.</span></a>
+            <input type="checkbox" name="aaccept-policy" class="user-policy__input visually-hidden"/>
+           <p class="user-policy__text"> Oświadczam iż akceptuję 
+            <a href="" class="user-policy__link"><span>Regulamin</span></a> i <a href="" class="user-policy__link"><span>Politykę Prywatności.</span></a>
           </p></label>        
           <button type="submit" class="submit-button">Wyślij</button>
           </div>

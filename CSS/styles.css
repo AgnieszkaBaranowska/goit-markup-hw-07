@@ -565,9 +565,13 @@ body{
 }
 
 
-    /* protfolio button */
+/* PRZYCISKI PORTFOLIO */
 
-.filtr-button{
+.nav__button{
+    margin-bottom: 50px;
+}
+
+.filtr__button{
     list-style-type: none;
     display: flex;  
     justify-content: center;
@@ -575,7 +579,7 @@ body{
     padding: 0px;
 }
 
-.filtr{
+.filtr__item{
     background-color:#F5F4FA;
     border-radius: 4px;
     border: 0px;
@@ -583,8 +587,8 @@ body{
     margin-left: 8px;
 }
 
-.filtr:hover,
-.filtr:focus{
+.filtr__item:hover,
+.filtr__item:focus{
     background-color:#2196F3;
     color:  #FFFFFF;
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -593,33 +597,33 @@ body{
 }
 
 
-/* rozmiary przycisków */
-.filtr1{
+/* FILTR PORTFOLIO ROZMIARY PRZYCISKÓW */
+
+.filtr__item1{
     width: 121px;
     height: 38px;
 }
-.filtr2{
+.filtr__item2{
     width: 93px;
     height: 38px;
 }
-.filtr3{
+.filtr__item3{
     width: 114px;
     height: 38px;
 }
-.filtr4{
+.filtr__item4{
     width: 91px;
     height: 38px;
 }
-.filtr5{
+.filtr__item5{
     width: 121px;
     height: 38px;
 }
 
-.nav-button{
-    margin-bottom: 50px;
-}
+
+
 /* zdjecie produktu */
-.project-list{
+.project{
     list-style: none;
     display: flex;
     flex-wrap: wrap;
@@ -628,7 +632,7 @@ body{
     justify-content: space-between;
     }
 
-.product{    
+.project__content{    
     display: flex;
     justify-content: space-between;
     box-sizing: border-box;
@@ -638,7 +642,7 @@ body{
     margin-bottom: 30px;
     cursor: pointer;    
 }
-.project{
+.project__item{
     position: relative;
     width: 370px;
     height: 404px;
@@ -647,7 +651,34 @@ body{
     align-items: center;     
 }
 
-.name-product{
+.project__description{
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    padding-left: 24px;
+    padding-right: 24px;
+    margin: 0px;
+    padding-top: 49px;
+}
+
+.project__overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateY(100%);
+    background-color: rgba(33, 150, 243, 0.9);;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.project__item:hover .project__overlay {
+    transform: translateY(0);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.project__text{
     z-index: 1001;
     position: absolute;
     background-color: #fff;
@@ -659,7 +690,7 @@ body{
     padding-top: 20px;
 }
 
-.project-name{
+.project__name{
     width: 322px;
     height: 36px;
     font-weight: 700;
@@ -671,7 +702,7 @@ body{
     padding-bottom: 4px;
 }
 
-.filtr-name{
+.project__filtr-name{
     color: #757575;
     width: 322px;
     height: 30px;
@@ -684,35 +715,7 @@ body{
 }
 
 
-.project:hover .overlay {
-    transform: translateY(0);
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-  
-.description{
-    font-size: 18px;
-    line-height: 28px;
-    letter-spacing: 0.03em;
-    color: #FFFFFF;
-    padding-left: 24px;
-    padding-right: 24px;
-    margin: 0px;
-    padding-top: 49px;
-}
-
-.overlay{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    transform: translateY(100%);
-    background-color: rgba(33, 150, 243, 0.9);;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
     
 
@@ -774,14 +777,14 @@ body{
     pointer-events: none;
 }
 
-.close-icon{
+.close__icon{
     width: 11px;
     height: 11px;
     fill: #000;
 }
 
 /* FORMULARZ OKNA MODALNEGO*/
-.modal-title{
+.form__title{
     font-weight: 700;
     font-size: 20px;
     line-height: 23px;
@@ -791,14 +794,14 @@ body{
     margin-top: 40px;
 }
 
-.modal-box{
+.form__content{
     display:flex;
     flex-direction: column;
     align-items: center;
     outline: none;
     
 }
-.label{
+.form__label{
     display: flex;
     flex-direction: column;
     justify-content: center;    
@@ -811,7 +814,7 @@ body{
     
     
 }
-.input{
+.form__input{
     width: 448px;
     height: 40px;
     border: 1px solid rgba(33, 33, 33, 0.2);
@@ -822,7 +825,7 @@ body{
 }
 
 
-.modal-icon{
+.form__icon{
     position: absolute;
     display: flex;
     width: 18px;
@@ -838,19 +841,19 @@ textarea:focus {
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.input:focus-within,
-.textarea:focus-within {
+.form__input:focus-within,
+.form__textarea:focus-within {
     border-color:#2196F3;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);     
 }
-.label:focus-within svg{
+.form__label:focus-within svg{
     fill: #2196F3;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.textarea{
+.form__textarea{
     width: 448px;
     height: 120px;
     border: 1px solid rgba(33, 33, 33, 0.2);
@@ -868,7 +871,7 @@ textarea:focus {
     margin-top: 20px;    
 }
 
-.modal-form-poicy-text{   
+.user-policy__text{   
     font-size: 14px;
     line-height: 24px;
     letter-spacing: 0.03em;
@@ -877,7 +880,7 @@ textarea:focus {
     margin-left: 8px;
 }
 
-.modal-form-poicy-text::before{
+.user-policy__text::before{
     display: inline-block;
     content: "";
     width: 16px;
@@ -889,7 +892,7 @@ textarea:focus {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-form-poicy:checked + .modal-form-poicy-text::before{
+.user-policy__input:checked + .user-policy__text::before{
     background-color:#2196F3;
     outline: 1px solid #2196F3;
     border-radius: 2px;
@@ -902,19 +905,15 @@ textarea:focus {
 }
 .visually-hidden{
     position: absolute !important;
-    clip: rect(1px, 1px, 1px, 1px);
-    
+    clip: rect(1px, 1px, 1px, 1px);    
     padding: 0 !important;
     border: 0 !important;
     height: 1px !important;
     width: 1px !important;
     overflow: hidden;
 }
-.color{
-    color: #2196F3;
-    
-}
-.link{
+
+.user-policy__link{
     color: #2196F3;
     
 }
