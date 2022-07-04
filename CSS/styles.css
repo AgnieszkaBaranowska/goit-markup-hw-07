@@ -15,6 +15,7 @@ body{
     padding-bottom: 94px;
 }
 
+
 /* nagłówek */
 .page-header{
     background-color: #FFFFFF;
@@ -31,21 +32,8 @@ body{
 /* logo */
 
 
-.header__logo {
-    text-decoration: none;
-    color:#212121;
-    width: 145px;
-    height: 31px;
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 31px;
-    letter-spacing: 0.03em;
-}
-.logo--web {
-    color: #2196F3;
-}
+
+
 /* nawigacja w nagłówku */
 
 .nav{
@@ -77,6 +65,9 @@ body{
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+.nav__link--active{
+    color: #2196F3;
+}
 .nav__link--active::after{
     content: "";
     border: 4px solid #2196F3;
@@ -88,7 +79,7 @@ body{
 
 
 /* kontakty w nagłówku */
-.header__contact{
+.contact{
     display: flex;
 }
 .contact__item:hover svg {
@@ -131,19 +122,9 @@ body{
     align-items: baseline;
 }
 
-.footer__logo{
-    text-decoration: none;
-    color: #FFFFFF;
-    width: 145px;
-    height: 31px;
-    font-family: 'Raleway';
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 31px;
-    letter-spacing: 0.03em;
-}
 
-.address{
+
+.footer__address{
     color: #FFFFFF;
     width: 247px;
     height: 21px;
@@ -174,7 +155,7 @@ body{
     color: #FFFFFF;
 }
 
-.footer-social-link__list{
+.footer-social-link__item{
     list-style: none;
     display: flex;
     justify-content: space-between; 
@@ -182,7 +163,7 @@ body{
     margin-top: 16px;   
     padding: 0px;       
  }
- .footer-social-link__item{
+ .footer-social-link__list{
     justify-content: center;
     align-items: center;
     display: flex;
@@ -193,7 +174,7 @@ body{
     cursor: pointer;
     margin-right: 10px;
 }
-.footer-social-link__item:hover{
+.footer-social-link__list:hover{
     background-color: #2196F3;  
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -322,7 +303,7 @@ body{
      padding: 0px;   
  }
 /*lorem list nasze atuty*/
-.assets__list{
+.our-strengths{
     list-style: none;
     display: flex;
     justify-content: space-between;
@@ -332,37 +313,31 @@ body{
     margin-bottom: 30px;
 }  
 
-
-.assets__image{
-    width: 270px;
-    height: 120px;
+.our-strengths__list{
+    width: 270px;     
     justify-content: center;
     align-items: center;
     display: flex;
+    flex-direction: column;
     background: #F5F4FA;
     border-radius: 4px;
+    margin: 0px;
 }
-
-.assets__icon:hover{
+.our-strengths__icon{
+    width: 70px;
+    height: 70px;
+    margin-top: 25px;
+    margin-bottom: 25px;    
+}
+.our-strengths__icon:hover{
     fill:#2196F3;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.assets__icon{
-    width: 70px;
-    height: 70px;
+.our-strengths__item{
+    background-color: #fff;
+    padding-top: 30px;
 }
-
-.our-strengths{
-    list-style-type: none;
-    display: flex;
-    gap: 30px;
-    padding: 0px;
-    margin: 0px;
-    
-}
-
 .our-strengths__title{
     width: 270px;
     height: 16px;
@@ -371,6 +346,7 @@ body{
     line-height: 16px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    margin: 0px;    
 }
 .our-strengths__text{    
     height: 75px;
@@ -378,10 +354,11 @@ body{
     line-height: 24px;
     letter-spacing: 0.03em;
     color: #757575;
+    
 }
 
 /* sekcja: "Czym się zajmujemy" */
-.profession__title{
+.our-profession__title{
     font-weight: 700;
     font-size: 36px;
     line-height: 42px;
@@ -391,7 +368,7 @@ body{
     margin-bottom: 50px;
 }
 
-.profession__list{
+.our-profession__list{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -399,12 +376,12 @@ body{
     margin: 0px;
     list-style-type: none;      
 }
-.profession__image{
+.our-profession__image{
     position: relative; 
     display: flex;
     justify-content: space-between;
 }
- .profession__description{
+ .our-profession__description{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -420,7 +397,7 @@ body{
     color: #FFFFFF;
 }
 
-.profession__image > .profession__description{
+.our-profession__image > .our-profession__description{
     position: absolute;
     background-color: rgba(47, 48, 58, 0.8);
     bottom: 0px;
@@ -450,7 +427,7 @@ body{
     margin: 0px;
 }
 
-.team_photo{
+.team_person-photo{
     height: 428px;
     background: #FFFFFF;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -478,7 +455,7 @@ body{
     color: #757575;
     margin: 0px;
 }
-.social-link__list{
+.social-link{
     list-style: none;
     display: flex;
     justify-content: space-between; 
@@ -488,7 +465,7 @@ body{
     margin-right: 32px;
     margin-left: 32px;
 }
-.social-link__item{
+.social-link__list{
     justify-content: center;
     align-items: center;
     display: flex;
@@ -498,12 +475,12 @@ body{
     cursor: pointer;
 }
 
-.social-link__item:hover{
+.social-link__list:hover{
     background-color: #2196F3;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);     
 }
-.social-link__item:hover svg{
+.social-link__list:hover svg{
     fill: #FFFFFF;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -567,11 +544,11 @@ body{
 
 /* PRZYCISKI PORTFOLIO */
 
-.nav__button{
+.nav-button{
     margin-bottom: 50px;
 }
 
-.filtr__button{
+.nav-butoon__list{
     list-style-type: none;
     display: flex;  
     justify-content: center;
@@ -579,7 +556,7 @@ body{
     padding: 0px;
 }
 
-.filtr__item{
+.nav-butoon__item{
     background-color:#F5F4FA;
     border-radius: 4px;
     border: 0px;
@@ -587,8 +564,8 @@ body{
     margin-left: 8px;
 }
 
-.filtr__item:hover,
-.filtr__item:focus{
+.nav-butoon__item:hover,
+.nav-butoon__item:focus{
     background-color:#2196F3;
     color:  #FFFFFF;
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -599,23 +576,23 @@ body{
 
 /* FILTR PORTFOLIO ROZMIARY PRZYCISKÓW */
 
-.filtr__item1{
+.item1{
     width: 121px;
     height: 38px;
 }
-.filtr__item2{
+.item2{
     width: 93px;
     height: 38px;
 }
-.filtr__item3{
+.item3{
     width: 114px;
     height: 38px;
 }
-.filtr__item4{
+.item4{
     width: 91px;
     height: 38px;
 }
-.filtr__item5{
+.item5{
     width: 121px;
     height: 38px;
 }
@@ -632,7 +609,7 @@ body{
     justify-content: space-between;
     }
 
-.project__content{    
+.project__list{    
     display: flex;
     justify-content: space-between;
     box-sizing: border-box;
@@ -777,7 +754,7 @@ body{
     pointer-events: none;
 }
 
-.close__icon{
+.close-icon{
     width: 11px;
     height: 11px;
     fill: #000;
