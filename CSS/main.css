@@ -397,7 +397,8 @@ textarea:focus {
   color: #757575;
 }
 
-.our-profession__title {
+.section__title {
+  display: flex;
   font-weight: 700;
   font-size: 36px;
   line-height: 42px;
@@ -405,6 +406,7 @@ textarea:focus {
   letter-spacing: 0.03em;
   margin: 0px;
   margin-bottom: 50px;
+  justify-content: center;
 }
 
 .our-profession__list {
@@ -448,16 +450,6 @@ textarea:focus {
 
 .team {
   background: #F5F4FA;
-}
-
-.team__title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 42px;
-  text-align: center;
-  letter-spacing: 0.03em;
-  margin: 0px;
-  margin-bottom: 50px;
 }
 
 .team__list {
@@ -804,6 +796,8 @@ textarea:focus {
   border: 0px;
   cursor: pointer;
   margin-left: 8px;
+  height: 38px;
+  padding: 0 22px;
 }
 .nav-butoon__item:hover, .nav-butoon__item:focus {
   background-color: #2196F3;
@@ -811,31 +805,6 @@ textarea:focus {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.item1 {
-  width: 121px;
-  height: 38px;
-}
-
-.item2 {
-  width: 93px;
-  height: 38px;
-}
-
-.item3 {
-  width: 114px;
-  height: 38px;
-}
-
-.item4 {
-  width: 91px;
-  height: 38px;
-}
-
-.item5 {
-  width: 121px;
-  height: 38px;
 }
 
 .project {
